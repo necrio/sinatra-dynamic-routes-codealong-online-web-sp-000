@@ -24,6 +24,7 @@ get '/multiply/:num1/:num2' do
     @num.to_s
     
     
+    
   end
 
 
