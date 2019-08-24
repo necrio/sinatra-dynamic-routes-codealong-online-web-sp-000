@@ -23,6 +23,7 @@ get '/multiply/:num' do
     @num = params[:num].to_i ** 2
     @num.to_s
     
+    erb :'/multiply/num.html'
   end
 
 
