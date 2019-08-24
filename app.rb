@@ -19,8 +19,10 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
   
-  get "/multiply/:num" do
-    
+  get "/multiply/:id" do
+    @num = all_num.select do |num|
+      num.id ==params[:id]
+    end.options_from_collection_for_selecterb :
 
 
 
