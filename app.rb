@@ -22,7 +22,9 @@ class App < Sinatra::Base
   get "/multiply/:id" do
     @num = all_num.select do |num|
       num.id ==params[:id]
-    end.options_from_collection_for_selecterb :
+    end.select 
+    erb :'/num/show.html'
+  end
 
 
 
