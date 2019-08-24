@@ -19,11 +19,9 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
   
-  get "/multiply/:id" do
-    @num = all_num.select do |num|
-      num.id ==params[:id]
-    end.select 
-    erb :'/num/show.html'
+get '/square/:number' do
+    @num = params[:number].to_i ** 2
+    @num.to_s
   end
 
 
