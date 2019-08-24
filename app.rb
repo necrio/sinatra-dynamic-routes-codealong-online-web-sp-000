@@ -19,7 +19,7 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
   
-get '/square/:number' do
+get '/square/:num' do
     @num = params[:num].to_i ** 2
     @num.to_s
   end
