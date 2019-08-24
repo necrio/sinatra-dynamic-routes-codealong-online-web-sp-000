@@ -22,6 +22,7 @@ class App < Sinatra::Base
 get '/multiply/:num' do
     @num = params[:num].to_i ** 2
     @num.to_s
+    
   end
 
 
